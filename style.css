@@ -1,0 +1,582 @@
+body{
+	background-color: #0C1027;
+	color:white;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.bold-text{
+	font-weight: bold;
+	display:inline-block;
+	}
+
+
+
+	content{
+		padding:2% 5% 0% 5%;
+	}
+	
+	
+	
+	 main{
+		 display:inline-block;
+		 width:63%;
+		 vertical-align: top;
+		 padding-top:70px;
+		 margin-left:3%;
+	 }
+	
+	 aside{
+		display:inline-block;
+		width:23%;
+		padding-top:40px;
+		
+	}
+/*Header*/
+
+header{
+display:grid;
+height:auto;
+grid-template-columns:60px 50px auto 300px 6% 5%;
+padding:2% 5% 0% 5%;
+
+}
+.header-images{
+	width:50px;
+	height:50px;
+	border-radius:50% ;
+}
+
+#name{
+	margin-top:5px;
+}
+#favourite{
+	margin-left:10%;
+	margin-top:14px;
+}
+#search-bar-container{
+
+	border-radius:10px;
+	background-color:#12193E;
+height:22px;
+padding:5px 5px 5px 10px;
+margin-top:5px;
+
+}
+ #search-bar-container input{
+	background-color:#12193E;
+	border:none;
+	padding:5px;
+	display: inline-block;
+	width:85%;
+	padding-left:10px;
+
+ }
+ #notification-icon{
+	margin-top:14px;
+	text-align:center;
+ }
+
+
+
+
+
+ /*Carousel*/
+ #carousel{
+	 display:grid;
+	 grid-template-columns: repeat(3,30%);
+	 grid-gap:30px;
+ }
+
+ .carousel-image{
+	 transition: 0.5s ease-in-out;
+ }
+.carousel-image:hover{
+	transform:scale(1.2,1.2) translateZ(100px);
+}
+
+/*Latest Release Section*/
+
+#latest-release-container{
+display:grid;
+grid-template-columns: repeat(2,45%);
+grid-template-rows: repeat(2,110px);
+grid-gap:20px;
+
+
+}
+.latest-release-details{
+	display:grid;
+grid-template-columns:130px 200px 50px;
+}
+.name-date{
+align-self: center;
+margin-left:20px ;
+
+}
+.latest-release-date{
+	line-height: 5px;
+	color: gainsboro;
+}
+.latest-release-name{
+	font-weight: bold;
+}
+.duration{
+	justify-self:end;
+	color:grey;
+	margin-top:-10px ;
+}
+
+/*Queue Section*/
+#queue-container{
+	margin-left:10px;
+}
+.queue-element{
+	display: grid;
+	grid-template-columns: 25px 40px 30px 160px;
+	grid-template-rows: 40px;
+}
+
+.queue-image{
+	height:40px;
+	width:40px;
+}
+.queue-element{
+margin-top:40px;
+
+}
+.queue-element-number{
+	align-self:center;
+	color:gray;
+}
+.queue-element-name{
+	font-size:14;
+	font-weight: bold;
+	display: inline-block;
+}
+.queue-element-author{
+	font-size:14;
+	display: inline-block;
+	color:gray;
+}
+.fav-icon{
+	justify-self: end;
+	align-self: center;
+	color:gray;
+}
+.queue-name-author{
+align-self:center;
+margin-left:10px;
+}
+#queue-heading{
+	font-size:20;
+	font-weight: bolder;
+}
+#queue-list-link{
+	margin-left: 150px;
+	color:cyan;
+	display: inline-block;
+}
+#queue-list-icon{
+	color:cyan;
+	margin-left: 20px;
+}
+
+#drop-down-menu{
+	
+	display: grid;
+	position:absolute;
+	top:22%;
+	left:79%;
+	height:70px;
+	grid-template-rows: 45% 10% 45%;
+	align-items: center;
+	background-color:white;
+	width:200px;
+}
+
+.drop-down-menu-options{
+	margin-left:35px;
+	color:black;
+	font-weight: 700;
+}
+
+#drop-down-menu-divider{
+	height:2px;
+	background-color: lightgray;
+	width:80%;
+	justify-self: center;
+}
+
+
+/*Popular Artists Section*/
+
+#popular-artists-container{
+	display: grid;
+	grid-template-columns: repeat(6,16%);
+
+}
+
+.popular-artist-image{
+	height:120px;
+	width:120px;
+	border-radius: 50%;
+}
+.popular-artist-name{
+margin-left:15%;
+line-height:5px ;
+}
+
+/*Latest Hindi and Punjabi songs*/
+.latest-container{
+	display: grid;
+	grid-template-columns: repeat(6,16%);
+
+}
+.latest-date{
+	line-height:5px;
+	font-size: 14px;
+	color:gainsboro;
+}
+.latest-name{
+	line-height:5px;
+	font-weight: bold;
+}
+
+.latest-image{
+	height:120px;
+	width:120px;
+
+
+}
+
+/*Stations Section*/
+
+#stations-container{
+	display:grid;
+	grid-template-columns: 17% repeat(6,12%);
+	background-color: #101642;
+	height: 130px;
+	width:94%;
+	grid-gap: 10px;
+	align-items: center;
+	justify-items: center;
+}
+
+.station{
+	background:url(images/latest-release.png);
+	border-radius:50%;
+	text-align: center;
+height: 80px;
+width:80px;
+}
+.station-name{
+	padding-top:30px;
+}
+#stations-logo{
+	background-color:yellowgreen;
+	height: 60px;
+	width: 100px;
+}
+#bg-yellow{
+	background-color:yellow;
+	height: 80px;
+	width: 80px;
+	margin-top:-10px;
+	margin-left:10px;
+}
+#bg-orange{
+	background-color:orangered;
+	height: 90px;
+	width: 70px;
+	margin-left:5px;
+	text-align: center;
+position:relative;
+top:-5px;
+}
+#bg-orange p{
+line-height:20px;
+margin-top: 5px;
+font-size: 14px;
+}
+#bg-orange img{
+	height: 40px;
+	width: 40px;
+	margin-top:15px;
+}
+
+
+/*Ocassion Section*/
+
+#ocassional-playlist-container{
+	display: grid;
+	grid-template-columns: repeat(3,30%);
+	grid-gap: 20px;
+	width:100%;
+	height:160px;
+}
+.ocassional-playlist-type{
+	background: url(images/ocassion.jpg);
+padding: 65px 100px 65px 100px;
+font-weight: bold;
+text-align: center;
+}
+
+
+
+
+/*Bottom Music Player*/
+
+#bottom-player{
+	background-color:#282828 ;
+	width:100%;
+	position:fixed;
+	bottom:0%;
+	left:0%;
+	padding:2px 5% 2px 5%;
+	height:70px;
+}
+#bottom-player-container{
+display:grid;
+grid-template-columns: 20% 50% 20%;
+color:gray;
+height:100%;
+
+}
+
+#bottom-player-favourite{
+	margin-top:-15px;
+}
+#bottom-player-block{
+	margin-top:-15px;
+}
+#song-info{
+	display:grid;
+	min-width: 200px;
+grid-template-columns: 60px 45% 25px 25px;
+align-items: center;
+justify-items: center;
+}
+#additional-controls{
+	display:grid;
+	min-width: 180px;
+	grid-template-columns: 25px 25px 25px auto 25px;
+	align-items: center;
+	justify-items: center;
+	}
+	#volume-container{
+		background-color: white;
+		border-radius: 5px;
+		width:90%;
+		height:5px;
+		position:relative;
+	}
+	#volume-level{
+		background-color:rgb(94, 228, 94);
+		border-radius: 5px;
+		width:50%;
+		height:5px;
+
+	}
+	#volume-changer{
+		height:20px;
+		width:20px;
+		border-radius:50%;
+		background-color:white;
+		position:absolute;
+		left:45%;
+		top:-7px;
+	}
+	#bottom-player-singer{
+		line-height:2px ;
+	}
+	#bottom-player-song-name{
+		line-height:10px ;
+		color:white;
+	}
+	#controls-timing-container{
+		display: grid;
+		grid-template-rows:60% 40%;
+		justify-items: center;
+	}
+	#controls{
+		display:grid;
+		grid-template-columns: 25px 25px 50px 25px 25px;
+		align-items: center;
+	justify-items: center;
+
+	}
+	#song-timing{
+		display:grid;
+		width:100%;
+		grid-template-columns: 20px 60% 20px;
+align-items: center;
+justify-content: center;
+
+	}
+	#time-duration-container{
+		background-color:gray;
+		border-radius: 5px;
+	height:5px;
+	width:90%;
+	justify-self: center;
+	position:relative;
+	}
+#timing{
+	width:30%;
+	height:5px;
+	background-color: rgb(94, 228, 94);
+	border-radius: 5px;
+	
+}
+#time-changer{
+	height:15px;
+	width:15px;
+	border-radius:50%;
+	background-color:white;
+	position:absolute;
+	left:28%;
+	top:-5px;
+	
+
+}
+#shuffle{
+	justify-self:right ;
+	padding-right:10px;
+}
+#repeat{
+	justify-self: left;
+	padding-left:10px;
+}
+#pause-play{
+	border:1px solid white;
+	border-radius: 50%;
+	color:white;
+	height:25px;
+	width:25px;
+	padding-left:10px ;
+	padding-top:7px ;
+}
+#current-time{
+	justify-self: center;
+}
+#total-time{
+	justify-self:center;
+}
+.tp-mg{
+	margin-top: 40px;
+}
+
+
+
+
+/*Single Playlist page*/
+
+
+.section-heading{
+font-weight:bold;
+font-size:22;
+}
+.mg-left{
+margin-left:105px;
+}
+
+#single-playlist-aside{
+	margin-left: 20px;
+}
+#single-playlist-main{
+	width:60%;
+	margin-top:-30px;
+}
+/*Similar Artists Section*/
+
+#similar-artists-section img{
+	height:80px;
+	width:80px;
+}
+#similar-artists-section .latest-release-details{
+	grid-template-columns:90px 180px 50px;
+	margin-top:20px;
+}
+#similar-artists-section .duration{
+	text-align:right;
+}
+.view-all-link{
+	font-size:12;
+}
+
+
+/*Recently Played Section*/
+
+#recently-played-section .queue-element{
+	grid-template-columns: 30px 45px 30px 200px;
+	grid-template-rows: 35px;
+}
+#recently-played-section .view-all-link{
+	margin-left:85px;
+}
+/*Playlist Section*/
+#playlist-container .queue-element{
+	background-color: #1A1E33;
+	display: grid;
+	grid-template-columns:30px 45px 55px 680px 75px ;
+	grid-template-rows: 60px;
+	align-items: center;
+	justify-items: center;
+	margin-top:10px;
+}
+
+.add-icon{
+	color: gray;
+}
+/*Card Section*/
+
+#card-container{
+	display:grid;
+	grid-template-columns: 33% 67%;
+	background-color:#141B41;
+	height:320px;
+}
+#card-image{
+	background: url(images/card-image.png);
+}
+#card-details{
+	padding:50px 30px 30px 30px;
+}
+#card-title{
+	font-weight:bolder;
+	font-size:22px;
+	
+}
+#follow-count{
+margin-left:330px;
+font-size:14px;
+
+}
+#play-all-button{
+	background: linear-gradient(to right,rgb(81, 81, 209) ,rgb(235, 87, 235));
+	border:0px;
+	height:30px;
+	width:130px;
+	color:white;
+	margin-right:60px;
+	margin-top:20px;
+}
+.gray-text{
+	color:gray;
+}
+#band-type{
+	line-height: 3px;;
+}
+#about-card{
+	font-size: 14px;
+}
+#tracks-no{
+	font-size: 14px;
+	line-height:10px;
+}
